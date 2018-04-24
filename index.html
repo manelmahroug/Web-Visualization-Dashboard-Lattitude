@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name = "description" content ="Data Science Bootcamp project">
+	<!-- The "X-UA-Compatible" value assigned to the "http-equiv" attribute of the <meta> tag allows web authors to choose the 
+    version of Internet Explorer to be used to render the page.
+    By giving to the "content" attribute the value "ie-edge" we tell Internet Explorer to display content in the highest mode 
+    available (e.g., for Internet Explorer 9, IE9 is the highest mode available). 
+    Not using this line of code may result in not being able to render the page if the user is using some older version of the
+    browser. -->
+	<meta http-equiv="X-UA-Compatible" content = "ie=edge ">
+	 <title>Bootstrap Visualization Dashboard</title>
+	 <link rel = "stylesheet" href="styles.css" media = "screen">
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+        	<div class="container-fluid navbar-custom">
+        		<div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+              aria-expanded="false">
+         	<span class="sr-only">Toggle Navigation</span>
+         	<span class="icon-bar"></span>
+
+         </button>
+
+         <div class = "col-xs-1 phone-nav">
+         	<a class="navbar-brand" href="#" id="logo">Lattitude</a>
+            </div>
+          </div>
+
+            <!-- We now gather all the navigation links, forms, and the other content for toggling. -->
+
+
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+           	 <ul class="nav navbar-nav navbar-right">  
+
+              
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Plots <span class="caret"></span></a>
+
+                <ul class="dropdown-menu">
+                 <li><a href="visualizations/MaxTemp.html">Max Temperature</a></li>
+                  <li><a href="visualizations/Humidity.html">Humidity</a></li>
+                  <li><a href="visualizations/Cloudiness.html">Cloudiness</a></li>
+                  <li><a href="visualizations/WindSpeed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+
+              <!-- These two list items below are simple HTML links to the "Comparison" site (where all the graphs are hosted) and 
+              the "Data" site, where the dataframe is shown. -->
+
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <div class="container">
+      <section class="row">
+        
+         
+        
+        <div class="col-md-8">
+          <article class="description-content">
+            
+            
+            
+            <h1 class="description-header">Summary: Latitude vs. X</h1>
+            
+             
+            
+            	<hr class="description-hr"/>
+
+             <img src="images/Latitude vs. Max Temp.png" id="description-image"/>
+            
+             
+            
+            <p>The purpose of this project was to analyze how the weather changes as we get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.</p>
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we 
+              looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and 
+              visualizations created as part of the analysis, as well as explanations and descriptions of any trends and 
+              correlations witnessed.</p>
+
+          </article>
+        </div>
+        
+        
+
+        <div class="col-md-4">
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a  href= "visualizations/Temperature.html"><img src= "images/Latitude vs. Max Temp.png" alt = "Latitude vs Temp" class ="imageNav-photo"></a>
+                <a href="visualizations/Humidity.html"><img src="images/Latitude vs. Humidity.png" alt="Latitude vs. Humidity" 
+                  class="imageNav-photo"></a>
+                <a href="visualizations/Cloudiness.html"><img src="images/Latitude vs. Cloudiness.png" alt="Latitude vs. Cloudiness" 
+                  class="imageNav-photo"></a>
+                <a href="visualizations/WindSpeed.html"><img src="images/Latitude vs Wind Speed.png" alt="Latitude vs. Wind Speed" 
+                  class="imageNav-photo"></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER 
+    There is a simple footer indicating that this website has copyrights (see again the homework Landing example). -->
+
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center"> &copy; Copyright Coding Bootcamp 2017</p>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
+
+
