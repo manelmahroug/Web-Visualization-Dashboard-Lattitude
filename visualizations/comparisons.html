@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -26,7 +26,7 @@ crossorigin="anonymous"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="weather.css">
   
 </head>
   <body style="background-color: lightgray">
@@ -56,7 +56,7 @@ crossorigin="anonymous"></script>
           <ul class="dropdown-menu">
             <li><a href="temperature.html">Temperature</a></li>
             <li><a href="humidity.html">Humidity</a></li>
-            <li><a href="cloudiness.html">Cloud Cover</a></li>
+            <li><a href="cloud_cover.html">Cloud Cover</a></li>
             <li><a href="wind_speed.html">Wind Speed</a></li>
           </ul>
         </li>
@@ -70,35 +70,30 @@ crossorigin="anonymous"></script>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-7">
-
-            <div class="panel panel-default">
-                <div class="panel-body">
-                  <h2>Humidity</h2>
-                  <hr>
-                  <img class = "img-responsive" src="../Images/Humidity.png" style="width:100%; margin: 5px;" alt="Humidity" >
-                  <p> Average humidity doesn't seem to have much correlation to latitude. Several varying latitudes have % humidity ranging from 40 to 100%.  
-                    Humidity does vary more as we approach the 
-                    Equator with some falling below 40% humidity. 
-                    Though, the cities on the equator vary in the 40% to 100% range.</p>
-                </div>
-              </div>
-
-        </div>
-        <div class="col-md-3">
+        
+        <div class="col-md-10">
 
             <div class="panel panel-default">
                 <div class="panel-body">
                     
-                  <h2>Visualizations</h2>
+                  <h2>Comparison: x vs. Latitude</h2>
                   <hr>
+                  <p>Click on any plot to get an in-depth analysis.</p>
                   <div class="row" style = "padding-bottom: 10px">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="../Images/Max_Temp.png" style="width:100%" alt=""></a></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive current-tag" src="../Images/Humidity.png" style="width:100%" alt=""></a></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+                        <h3>Max Temperture</h3>
+                        <a href="temperature.html"><img class = "img img-responsive" src="Images/output_9_0.png" style="width:100%" alt=""></a></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+                        <h3>Humidity</h3>
+                        <a href="humidity.html"><img class = "img img-responsive" src="Images/output_11_0.png" style="width:100%" alt=""></a></div>
                   </div>
                   <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="../Images/Cloudiness.png" style="width:100%" alt=""></a></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind_speed.html"><img class = "img img-responsive" src="../Images/Wind_speed.png" style="width:100%" alt=""></a></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h3>Cloud Cover</h3>
+                        <a href="cloud_cover.html"><img class = "img img-responsive" src="Images/output_13_0.png" style="width:100%" alt=""></a></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h3>Wind Speed</h3>
+                        <a href="wind_speed.html"><img class = "img img-responsive" src="Images/output_15_0.png" style="width:100%" alt=""></a></div>
                   </div>
               
               </div>
@@ -106,7 +101,6 @@ crossorigin="anonymous"></script>
         </div>
       </div>
       <div class="col-md-1"></div>
-
 
     </div>
   </div>
